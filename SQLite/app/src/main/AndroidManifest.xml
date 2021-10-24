@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.sqlite">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CrudSqlite"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SQLite">
+        <activity
+            android:name=".update_biodata"
+            android:exported="true"
+            android:label="Update Biodata"/>
+        <activity
+            android:name=".lihat_biodata"
+            android:exported="true"
+            android:label="Lihat Biodata"/>
+        <activity
+            android:name=".buat_biodata"
+            android:exported="true"
+            android:label="Form Biodata Baru"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
